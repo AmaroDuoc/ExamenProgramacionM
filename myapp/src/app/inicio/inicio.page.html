@@ -1,0 +1,58 @@
+<ion-content class="fondo">
+  <ion-menu  contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Contenido</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+         <!-- Opción 1: -->
+        <ion-item>
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-label>Inicio</ion-label>
+        </ion-item>
+        <!-- Opción : -->
+        <ion-item (click)="redirectToAsistencia()">
+          <ion-icon slot="start" name="calendar"></ion-icon>
+          <ion-label>Ver Asistencia</ion-label>
+        </ion-item>
+        <!-- cerrar sesion -->
+        <ion-item>
+          <ion-button (click)="irAHome()" class="boton">Cerrar Sesion</ion-button>
+        </ion-item>
+     </ion-list>
+</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button> 
+          </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+        
+      </ion-toolbar>
+    </ion-header>
+   
+  </div>
+    <ion-avatar class="foto">
+      <img alt="Silhouette of a person's head" src="../../assets/icon/persona.png" />
+    </ion-avatar>
+  
+  
+  
+    <ion-card class="carta">
+    
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">¡Bienvenido!</ion-card-title>
+        <br>
+        <ion-label class="subtitulo">
+        {{ nombreUsuario }}
+        </ion-label>      
+      </ion-card-header>
+      
+    </ion-card>
+
+  </ion-content>

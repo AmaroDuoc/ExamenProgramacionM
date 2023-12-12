@@ -1,0 +1,13 @@
+<ion-content class="cuadro">
+ <ion-header>
+  <img src="../../assets/icon/Logo_DuocUC.svg.png" width="200 px" class="logo">
+ </ion-header>
+
+  <ion-item class="item">
+    <ion-label position="floating">Correo Electrónico</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-input  label="Ingresa Nueva contraseña" type="password" labelPlacement="floating" placeholder="Ingrese su Nueva Contraseña"></ion-input>
+  </ion-item>
+<br>
+  <ion-button expand="full" (click)="irALogin()">Recuperar Contraseña</ion-button>
+</ion-content>

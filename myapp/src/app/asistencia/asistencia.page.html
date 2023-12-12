@@ -1,0 +1,98 @@
+<ion-content class="fondo">
+  <ion-menu  contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Contenido</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+
+
+
+      <ion-list>
+         <!-- Opción 1: -->
+        <ion-item (click)="redirectToInicio()">
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-label>Inicio</ion-label>
+        </ion-item>
+          <!-- Opción 2: -->
+        <!-- opcion 4 -->
+        <ion-item (click)="redirectToAsistencia()">
+          <ion-icon slot="start" name="calendar"></ion-icon>
+          <ion-label>Ver Asistencia</ion-label>
+        </ion-item>
+        <!-- cerrar sesion -->
+        <ion-item>
+          <ion-button (click)="irAHome()" class="boton">Cerrar Sesion</ion-button>
+        </ion-item>
+     </ion-list>
+</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button>
+          </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+   
+  </div>
+  
+<!-- ---------------------------------------------------------------------------------------------- asistencia---------------------------------------->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<ion-button (click)="escanearQR()">Escaner QR</ion-button>
+{{code}}
+
+<ion-button (click)="generarQR()">Generar QR</ion-button>
+<ion-accordion-group class="asistencia">
+  <ion-accordion value="first">
+    <ion-item slot="header" color="primary">
+      <ion-label>Estadistica Descriptiba</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 100%</div>
+  </ion-accordion>
+  <ion-accordion value="second">
+    <ion-item slot="header" color="primary">
+      <ion-label>Programacion Movil</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 95%</div>
+  </ion-accordion>
+  <ion-accordion value="third">
+    <ion-item slot="header" color="primary">
+      <ion-label>Arquitectura</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 95%</div>
+  </ion-accordion>
+  <ion-accordion value="four">
+    <ion-item slot="header" color="primary">
+      <ion-label>Calidad De Software</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 95%</div>
+  </ion-accordion>
+  <ion-accordion value="fifth">
+    <ion-item slot="header" color="primary">
+      <ion-label>Etica Para El Trabajo</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 60%</div>
+  </ion-accordion>
+  <ion-accordion value="six">
+    <ion-item slot="header" color="primary">
+      <ion-label>Proceso De Portafolios 3</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Asistencia 100%</div>
+  </ion-accordion>
+</ion-accordion-group>
+  
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <img src="../../assets/icon/Logo_DuocUC.svg.png" width="200 px" class="logo">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item>
+      <ion-input [(ngModel)]="usuario" label="Usuario" labelPlacement="floating" placeholder="Ingrese su Usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="contrasena"  label="Contraseña" type="password" labelPlacement="floating" placeholder="Ingrese su Contraseña">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-toggle aria-label="Success toggle" color="success" [checked]="true">Recordar</ion-toggle>
+    </ion-item>
+    <a (click)="irARecuperar()" class="ion-button ion-button-full">He Olvidado Mi Contraseña</a>
+    <br>
+    <ion-button (click)="irAInicio()" class="boton">Ingresar</ion-button>
+    </div>
+</ion-content>

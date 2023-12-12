@@ -1,0 +1,44 @@
+<ion-content class="fondo"  >
+<ion-header>
+  <ion-toolbar color="Black">
+    
+      <img src="../../assets/icon/Logo_DuocUC.svg.png" width="200 px" class="logo">
+    
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-card class="carta" #card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">¡Bienvenido!</ion-card-title>
+      <div class="subtitulo" >¡Bienvenido al Portal de Asistencias DuocUC!</div>
+    </ion-card-header>
+    
+  </ion-card>
+  <!-- Agregamos un botón que redirige a la página de inicio de sesión (login) -->
+  <ion-button expand="full" (click)="redirectToLogin()">
+    Continuar
+  </ion-button>
+  
+  <ion-progress-bar class="bar" class="barritahome" type="indeterminate"></ion-progress-bar>
+  <br>
+  
+  <div class="botones">
+    <ion-button (click)="play()">Play</ion-button>
+    <ion-button (click)="pause()">Pause</ion-button>
+    <ion-button (click)="stop()">Stop</ion-button>
+  </div>
+ <br>
+
+ <ion-button (click)="setOpen(true)">presioname</ion-button>
+ <ion-alert
+   [isOpen]="isAlertOpen"
+   header="Felicidades"
+   subHeader="Solo es un test"
+   message="continua con lo demas"
+   [buttons]="alertButtons"
+   (didDismiss)="setOpen(false)"
+ ></ion-alert>
+
+
+</ion-content>
